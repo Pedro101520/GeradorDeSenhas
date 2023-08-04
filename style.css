@@ -1,0 +1,122 @@
+*{
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Aqui é para definir a cor de fundo */
+body{
+    background-color: #181818;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Aqui é para definir o tamanho da logo */
+.Logo{
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+/* Aqui é para ajustar os outros componentes */
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+/* Aqui é para formatar o texto */
+.container-input span{
+    color: #FFF;
+    font-size: 22px;
+}
+
+/* Aqui é para formatar a barra */
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: #DFDFDF;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+/* Aqui é para formatar o botão */
+.button-cta{
+    height: 40px;
+    background-color: #3EB72B;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Aqui é para formatar a mensagem que informa que a senha foi gerada */
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Aqui é para formatar a mensagem que indica qual foi a senha gerada */
+.title{
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+/* Aqui é para formatar a senha */
+.password{
+    height: 60px;
+    background-color: rgba(0,0,0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border: 1px solid #313131;
+    /* Aqui é para dar uma transição na animação do botão */
+    transition: transform 0.5s;
+}
+/* Aqui é para dar um efeito no botão do password */
+.password:hover{
+    transform: scale(1.05);
+}
+
+/* Aqui é para formatar a mensagem que fala que a senha foi copiada */
+.tooltip{
+    color: #FFF;
+    position: relative;
+    top: 28px;
+    padding: 6px 8px;
+    background: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+/* Essa parte serve para quando o mouse passar por cima do botão a mensagem aparecer */
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
